@@ -1,17 +1,15 @@
 syntax on
-set relativenumber
+"set relativenumber
 set number
 set smartindent
 set autoindent
 set ruler
-set mouse=a
+"set mouse=a --> Let's try to learn without the mouse first !
 set ignorecase
 set smartcase
 set cursorline
-setlocal tabstop=4
-setlocal softtabstop=4
-setlocal shiftwidth=4
-setlocal expandtab
+set shiftwidth=2
+set expandtab
 
 "nnoremap = map keys, dont remap recursively and only in normal mode"
 
@@ -57,3 +55,5 @@ nnoremap <leader>o :NERDTree<CR>
 
 " source init file
 nnoremap <leader>so :source ~/.vimrc<CR>
+
+set grepprg=rg\ --vimgrep
